@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row justify-content-around align-items-center" style="height: 45vh;">
+    <app-corner1 [receivedParentMessage]="messageToSendP"></app-corner1>
+    <app-corner2 [receivedParentMessage]="messageToSendP"></app-corner2>
+  </div>
+  <div class="text-center w-25 mx-auto">
+    <input type="text" #name class="form-control">
+    <button class="btn btn-primary my-3" (click)="sendToChild(name.value)">Send to Child</button>
+  </div>
+  <div class="row justify-content-around align-items-center" style="height: 45vh;">
+    <app-corner3 [receivedParentMessage]="messageToSendP"></app-corner3>
+    <app-corner4 [receivedParentMessage]="messageToSendP"></app-corner4>
+  </div>
+</div>

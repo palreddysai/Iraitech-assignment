@@ -1,0 +1,10 @@
+<div class="container pt-4">
+  <p>Number Series: 2,3,10,15,26,35,50,63</p>
+  <form action="">
+    <div class="form-group">
+      <input type="number" class="form-control" [(ngModel)]="num" name="text">
+    </div>
+    <button class="btn btn-info" (click)="submit(num)">Submit</button>
+    <p *ngFor="let num of y">{{num}}</p>
+  </form>
+</div>
